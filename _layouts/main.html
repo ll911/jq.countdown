@@ -16,17 +16,9 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
   <script src="//cdn.rawgit.com/hilios/jQuery.countdown/{{site.plugin_version}}/dist/jquery.countdown.min.js"></script>
 </head>
-<body{% if page.toc %} data-spy="scroll" data-target=".toc"{% endif %}>
-
+<body>
 <main>
   {{content}}
 </main>
-<script type="text/javascript">
-$(function() {
-  $('.nav-toggle > button').click(function(event) {
-    $('header nav').toggleClass('active');
-  });
-});
-</script>
 </body>
 </html>
