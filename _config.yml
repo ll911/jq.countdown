@@ -1,7 +1,7 @@
 name:           The Final Countdown
 nickname:       jQuery.countdown
 plugin_version: 2.2.0
-baseurl:        https://ll911.github.io/jq.countdown
+baseurl:        https://ll911.github.io/sde.countdown/
 highlight:      true
 markdown:       kramdown
 redcarpet:
