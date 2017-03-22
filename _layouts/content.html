@@ -20,26 +20,13 @@ layout: main
 </header>
 
 <div class="container">
-  {% include ad.html %}
-  <div class="pure-g-r">
-    {% if page.category == 'docs' %}
     <div class="pure-u-1-5">
       {% include toc.html %}
     </div>
     {% endif %}
-    <div class="{{page.category}} {% case page.category %}
-        {% when 'examples'  %}pure-u-3-5
-        {% when 'docs'      %}pure-u-4-5
-        {% else             %}pure-u-1-1
-        {% endcase %}">
       <article>
         {{content}}
       </article>
-    </div>
     {% if page.category == 'examples' %}
-    <div class="pure-u-2-5">
-      {% include examples-list.html %}
-    </div>
     {% endif %}
-  </div>
 </div>
